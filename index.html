@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" type="image/ico" href="C:/cv-online/favicon.ico">
 	<title>MS Solutions</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="2dapract.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -18,8 +18,8 @@
 			<p class="logo">MS Solutions</p>
 			<nav>
 					<a href="#sobre_mi" title="">Sobre mi</a>
-					<a href="" title="">Habilidades</a>
-					<a href="" title="">Experiencia</a>
+					<a href="#habilidades" title="">Habilidades</a>
+					<a href="#experiencia" title="">Experiencia</a>
 					<a href="" title="">Contacto</a>
 			</nav>
 		</div>
@@ -50,23 +50,25 @@
     		<div class="contenedor_info">
 
 			    <i id="uno"class="fa fa-10x fa-address-card"style="color: rgb(245, 69, 32)"></i>
-			    <h3>Informacion personal</h3>
+			    <h3>Información personal</h3>
 		    
 		         <div class="div_boton">
-				     <button class="readMore_btn" id="readMore_btn">&nbsp;&nbsp;+ Info</button>
+				     <button class="readMore_btn" href="#" onclick="vermas('mas')" id="mas">&nbsp;&nbsp;+ Info</button>
 			     </div>
 			</div>     
 
 
 		    <div class="lista_personal">
-			    <ul id="sobre_mi_lista">
-			    	<span id="hideText" class="hideText">
+			    <ul id="personal_lista">
+			       <!--<span id="hideText" class="hideText">-->
 				   <li><i class="fas fa-2x fa-flag" style="color:blue;"></i>&nbsp;&nbsp;Nacionalidad:<em>&nbsp;Argentina</em></li>
 				   <li><i class="fa fa-2x fa-child" style="color:silver";></i>&nbsp;&nbsp;&nbsp;&nbsp;Edad: <em>34</em></li>
 				   <li><i class="fa fa-2x fa-tasks" style="color:navy;"></i>&nbsp;&nbsp;Profesión: <em>Programador Web</em></li>
 				   <li><i class="fa fa-2x fa-envelope" style="color:fuchsia;"></i>&nbsp;&nbsp;E-mail: <em>Lorem@ipsum.com</em></li>
 				   <li><i id="one" class="fa fa-2x fa-map-marker" style="color:skyblue;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Localidad: <em> Mar del Plata</em></li>
-			    </ul>			
+				   <button class="readMore_btn" href="#" onclick="vermas('menos')" id="menos">&nbsp;&nbsp;Ocultar</button>
+			    </ul>	
+			    		
 		    </div>
     	
     </section>
@@ -77,17 +79,17 @@
 		<div class="contenedor_info">
 			
 			<i class="fa fa-10x fa-cogs"style="color: rgb(245, 69, 32)"></i>
-			<h3>Habilidades</h3>		
+			<h3>Habilidades</h3>	
 		    
 		    <div class="div_boton">
-				<button class="readMore_btn_a" id="readMore_btn_a">&nbsp;&nbsp;+ Info</button>	
+				<button class="readMore_btn" href="#" onclick="vermas1('mas1')" id="mas1">&nbsp;&nbsp;+ Info</button>	
 		     </div>
  	    </div>
 
 		<div class="contenedor_lista">
 			
 			<ul id="habilidades_lista">
-				<span id="hideTextA" class="hideTextA">
+				<!--<span id="hideTextA" class="hideTextA">-->
 				
 				<li><i class="fab fa-2x fa-html5" style="color: red;"></i>&nbsp;&nbsp;HTML:</li>
 				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
@@ -99,6 +101,7 @@
 				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
 				<li><i class="fab fa-2x fa-java" style="color: green;"></i>&nbsp;&nbsp;Java:</li>
 				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
+				<button class="readMore_btn" href="#" onclick="vermas1('menos1')" id="menos1">&nbsp;&nbsp;Ocultar</button>
 
 			</ul>
 			
@@ -116,7 +119,7 @@
 			<h3>Experiencia Laboral</h3>				
 		
 		    <div class="div_boton">
-				<button class="readMore_btn" id="readMore_btn">&nbsp;&nbsp;+ Info</button>
+				<button class="readMore_btn" href="#" onclick="vermas2('mas2')" id="mas2">&nbsp;&nbsp;+ Info</button>
 				
 			</div>
 	    </div>
@@ -129,6 +132,7 @@
 				<li><i class="fa fa-2x fa-mosque" style="color: violet;"></i>&nbsp;&nbsp;Bank of City</li>
 				<p> Periodo: 2019-2021</p>
 				<p class="descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+				<button class="readMore_btn" href="#" onclick="vermas2('menos2')" id="menos2">&nbsp;&nbsp;Ocultar</button>
 			</ul>
 		</div>
 		
