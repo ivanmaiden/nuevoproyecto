@@ -1,37 +1,32 @@
-let readMore_btn = document.getElementById('readMore_btn');
-let hideText = document.getElementById('hideText');
-
-readMore_btn.addEventListener('click', toggleText);
-
-function toggleText() {
-  hideText.classList.toggle('showText');
-
-  if(hideText.classList.contains('showText')) {
-    readMore_btn.innerHTML = 'Leer menos'
-  }
-  else {
-    readMore_btn.innerHTML = 'Leer mas'
-  }
+function vermas(id){
+if(id=="mas"){
+document.getElementById("personal_lista").style.display="block";   
+document.getElementById("mas").style.display="none"; 
+}
+else{
+document.getElementById("personal_lista").style.display="none";
+document.getElementById("mas").style.display="inline";
+}
 }
 
-
-let readMore_btn_a = document.getElementById('readMore_btn_a');
-let hideTextA = document.getElementById('hideTextA');
-
-
-readMore_btn_a.addEventListener('click', toggleText);
-
-function toggleText() {
-  hideTextA.classList.toggle('showTextA');
-
-  if(hideTextA.classList.contains('showTextA')) {
-    readMore_btn_a.innerHTML = 'Leer menos'
-  }
-  else {
-    readMore_btn_a.innerHTML = 'Leer mas'
-  }
+function vermas1(id){
+if(id=="mas1"){
+document.getElementById("habilidades_lista").style.display="block";   
+document.getElementById("mas1").style.display="none"; 
+}
+else{
+document.getElementById("habilidades_lista").style.display="none";
+document.getElementById("mas1").style.display="inline";
+}
 }
 
-
-
-
+function vermas2(id){
+if(id=="mas2"){
+document.getElementById("experiencia_lista").style.display="block";   
+document.getElementById("mas2").style.display="none"; 
+}
+else{
+document.getElementById("experiencia_lista").style.display="none";
+document.getElementById("mas2").style.display="inline";
+}
+}
