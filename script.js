@@ -30,3 +30,13 @@ document.getElementById("experiencia_lista").style.display="none";
 document.getElementById("mas2").style.display="inline";
 }
 }
+function vermas3(id){
+if(id=="mas3"){
+document.getElementById("formulario_de_contacto").style.display="block";   
+document.getElementById("mas3").style.display="none"; 
+}
+else{
+document.getElementById("formulario_de_contacto").style.display="none";
+document.getElementById("mas3").style.display="inline";
+}
+}
