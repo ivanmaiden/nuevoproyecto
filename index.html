@@ -20,7 +20,7 @@
 					<a href="#sobre_mi" title="">Sobre mi</a>
 					<a href="#habilidades" title="">Habilidades</a>
 					<a href="#experiencia" title="">Experiencia</a>
-					<a href="#formulario_de_contacto" title="">Contacto</a>
+					<a href="#formulario" title="">Contacto</a>
 			</nav>
 		</div>
 	
@@ -36,7 +36,7 @@
 
 		    <div class="nombre">
 				<h1 id="mark">Mark Smitt</h1>
-				<h3 id="front"><em>Front End Developer</em></h3>	
+				<h2 id="front"><em>Front End Developer</em></h2>	
 		    </div>
     	
     	</div>
@@ -149,70 +149,88 @@
 		
 
 
-    <section id="formulario_de_contacto">
+    <section id="formulario"> <!--inicia formulario-->
     	
     
 
-        <div class="contenedor_info" id="form_contacto"> 
-         
-           <h2>Formulario de contacto</h2>
-           <h3>Escríbeme y en breve me pondré en contacto contigo</h3>
+        <div class="contenedor_info" > 
+        	
+        	<i class="fa fa-10x fa-business-time"style="color: rgb(245, 69, 32)"></i>        	         
+            <h3>Formulario de contacto</h3>
+                    
+            <div class="div_boton">
+				<button class="readMore_btn" href="#" onclick="vermas3('mas3')" id="mas3">&nbsp;&nbsp;+ Info</button>
+		    </div>
+
+        </div>
 
 
-          <form action="submeter-formulario.php" method="post">       
+        <div id="formulario_de_contacto">
+        	
 
+        	<h2>Escríbeme y en breve me pondré en contacto contigo</h2>
+           
+
+            <div id="formulario_texto">
+           		
+           	    <form action="submeter-formulario.php" method="post">       
+                  <p>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+              
+                    <p>
+                       <label for="email" class="colocar_email">Email
+                           <span class="obligatorio">*</span>
+                       </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
             
-                <p>
-                  <label for="nombre" class="colocar_nombre">Nombre
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                </p>
+                    <p>
+                       <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                       <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
               
-                <p>
-                  <label for="email" class="colocar_email">Email
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                </p>
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                   </p>    
+              
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>                     
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>                    
+              
+                     <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                     <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
             
-                <p>
-                  <label for="telefone" class="colocar_telefono">Teléfono
-                  </label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>    
-              
-                <p>
-                  <label for="asunto" class="colocar_asunto">Asunto
-                    <span class="obligatorio">*</span>
-                  </label>
-                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                </p>    
-              
-                <p>
-                  <label for="mensaje" class="colocar_mensaje">Mensaje
-                    <span class="obligatorio">*</span>
-                  </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                </p>                    
-              
-                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                </form>
+            </div>
+            <div class="boton_menos" id="ultimo_boton">
+					<button  href="#" onclick="vermas3('menos3')" >&nbsp;&nbsp;Ocultar</button>
+		    </div>
 
-                <p class="aviso">
-                  <span class="obligatorio"> * </span>los campos son obligatorios.
-                </p>          
-            
-             </form>
-        </div>  
-    
+        </div>
 
-    </section>		
+    </section>		<!-- fin de formulario de contacto-->
 
 
-		  <!-- formulario de contacto en html y css -->  
+    <footer>
+        <div class="foot">
+            <p>&copy; MS Solutions</p>
+        </div>
+    </footer>
 
-
-	
 
 <script src="script.js"></script>
 
