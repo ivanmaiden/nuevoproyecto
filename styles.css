@@ -27,6 +27,9 @@ ul{
 li{ 
 	font-size: 1.25em;
 }
+p{
+    font-weight: bold;
+}
 
 button{
     font-size: 1.25em;
@@ -158,8 +161,6 @@ section{
 
 }
 
-
-
 #experiencia_lista{
     display: none;
 }
@@ -184,3 +185,41 @@ section{
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
+
+
+
+@media (min-width: 750px){
+
+    body{
+        max-width: 1000px;
+        margin: auto;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        max-width: 1000px;
+        background-color: rgb(240,240,240)
+    }
+
+    header .contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0px;
+     
+        
+}
+    header nav{
+    display: flex;
+    flex-direction: row; 
+    padding: 20px 10px;
+     
+}
+
+   header a{
+    padding: 6px;
+    background-color: rgb(235,235,235);
+    
+
+    }
