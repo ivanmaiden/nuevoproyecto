@@ -20,7 +20,7 @@
 					<a href="#sobre_mi" title="">Sobre mi</a>
 					<a href="#habilidades" title="">Habilidades</a>
 					<a href="#experiencia" title="">Experiencia</a>
-					<a href="" title="">Contacto</a>
+					<a href="#formulario_de_contacto" title="">Contacto</a>
 			</nav>
 		</div>
 	
@@ -66,7 +66,10 @@
 				   <li><i class="fa fa-2x fa-tasks" style="color:navy;"></i>&nbsp;&nbsp;Profesión: <em>Programador Web</em></li>
 				   <li><i class="fa fa-2x fa-envelope" style="color:fuchsia;"></i>&nbsp;&nbsp;E-mail: <em>Lorem@ipsum.com</em></li>
 				   <li><i id="one" class="fa fa-2x fa-map-marker" style="color:skyblue;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Localidad: <em> Mar del Plata</em></li>
-				   <button class="readMore_btn" href="#" onclick="vermas('menos')" id="menos">&nbsp;&nbsp;Ocultar</button>
+				   <div class="boton_menos" id="menos">
+				   	<button href="#" onclick="vermas('menos')">&nbsp;&nbsp;Ocultar</button>
+				   </div>
+				   
 			    </ul>	
 			    		
 		    </div>
@@ -101,7 +104,10 @@
 				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
 				<li><i class="fab fa-2x fa-java" style="color: green;"></i>&nbsp;&nbsp;Java:</li>
 				<p class="descripcion"><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </em></p>
-				<button class="readMore_btn" href="#" onclick="vermas1('menos1')" id="menos1">&nbsp;&nbsp;Ocultar</button>
+				<div class="boton_menos">
+					<button href="#" onclick="vermas1('menos1')" >&nbsp;&nbsp;Ocultar</button>
+				</div>
+				
 
 			</ul>
 			
@@ -132,17 +138,22 @@
 				<li><i class="fa fa-2x fa-mosque" style="color: violet;"></i>&nbsp;&nbsp;Bank of City</li>
 				<p> Periodo: 2019-2021</p>
 				<p class="descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-				<button class="readMore_btn" href="#" onclick="vermas2('menos2')" id="menos2">&nbsp;&nbsp;Ocultar</button>
+				<div class="boton_menos">
+					<button  href="#" onclick="vermas2('menos2')" >&nbsp;&nbsp;Ocultar</button>
+				</div>
+				
 			</ul>
 		</div>
 		
 	</section>
 		
-		
 
-    <div class="contact_form">
 
-        <div class="formulario"> 
+    <section id="formulario_de_contacto">
+    	
+    
+
+        <div class="contenedor_info" id="form_contacto"> 
          
            <h2>Formulario de contacto</h2>
            <h3>Escríbeme y en breve me pondré en contacto contigo</h3>
@@ -193,16 +204,14 @@
             
              </form>
         </div>  
-    </div>
+    
+
+    </section>		
 
 
 		  <!-- formulario de contacto en html y css -->  
 
-  
-			
-		
-		
- <!--termina el contenedor-->
+
 	
 
 <script src="script.js"></script>
