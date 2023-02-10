@@ -105,7 +105,7 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+    }
 
 .nombre{
 	color: white;
@@ -135,29 +135,52 @@ section{
     
 }
 
-
 #personal_lista{
     display: none;
 }
+
+#personal_lista li{
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
 #habilidades_lista{
     display: none;
 }
+
+#habilidades_lista p{
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+
+
 #experiencia_lista{
     display: none;
 }
 
-/*
-.hideText {
-  display: none;
-  
-}
-
-.showText {
-  display: block;
+#experiencia_lista p{
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
-*/
+.boton_menos{
+     text-align: center;
+}
+#menos{
+    padding-top: 15px;
+}
+#form_contacto {
+    padding: 1px;
+}
 
-
-
-
+#enviar{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
